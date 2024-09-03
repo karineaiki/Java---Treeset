@@ -32,7 +32,7 @@ public class Thanos {
         heroes.add(ironman);
 
         System.out.println("\nSubset of heroes :");
-        for (Hero hero : heroes.subSet(spiderman, ironman)) {
+        for (Hero hero : heroes.subSet(spiderman, true, ironman, true)) {
             System.out.println(hero.getName() + ", " + hero.getAge());
         }
     }
